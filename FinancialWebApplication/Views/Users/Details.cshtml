@@ -1,0 +1,74 @@
+﻿@model FinancialWebApplication.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoggedIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoggedIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDTTM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDTTM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDTTM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDTTM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
